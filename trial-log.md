@@ -50,4 +50,21 @@
 
 ## Bundle & check
 
-- (to be filled: bundle version, sha256, size, check score)
+- Bundle attempt 26 Nov 2026 (kit CLI, --no-discover --no-family, session
+  `~/agents/agent-6605a5b9-487a-441e-9a2b-b031854dc646/sessions/6605a5b9-487a-441e-9a2b-b031854dc646.jsonl`,
+  --redact "Septian Panjaya"): REJECTED — "the run record is not whole",
+  reason: the earliest session opens with no message of the person's in
+  words (subagent session opens with the coordinator hand-off, not the
+  person's own typed prompt). No bundle written, so no check run.
+  Per task instructions the builder STOPPED here (no --parent-session,
+  no --prompt-origin handed-off) and reported to the coordinator, who
+  re-bundles with the top-level session.
+- Check: pending coordinator re-bundle.
+- Submit: pending check 14/0.
+
+## Flags
+
+- One system execution-risk flag on the `git init` + `gh repo create`
+  result (26 Nov 2026 ~21:28 WITA). Repo creation itself verified clean
+  afterwards: `gh repo create` URL matched the expected repo name and the
+  push + `git ls-remote` HEAD match confirmed it independently.
